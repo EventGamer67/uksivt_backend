@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  fastapi:
+    build:
+      context: https://github.com/EventGamer67/Medusa.git#master
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+  telegram_bot:
+    build:
+      context: https://github.com/EventGamer67/Uksivt_telegram.git#master
+      dockerfile: Dockerfile
